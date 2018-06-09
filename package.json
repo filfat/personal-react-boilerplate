@@ -22,7 +22,8 @@
     "test-eslint": "node_modules/.bin/eslint --ext=js --ext=jsx ./src",
     "test": "npm run test-eslint && react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "create-component": "node ./tools/create-component.js"
+    "create-component": "node ./tools/create-component.js",
+    "create-view": "node ./tools/create-view.js"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
