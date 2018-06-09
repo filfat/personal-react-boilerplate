@@ -3,7 +3,7 @@ const fs = require('fs');
 const component = process.argv[2];
 
 if (process.argv.length < 3) {
-    console.log('Usage: yarn run create-component -- {name}');
+    console.log('Usage: yarn run create-component {name}');
     process.exit(1);
 }
 
