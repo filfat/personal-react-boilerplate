@@ -42,6 +42,8 @@ it('renders without crashing', () => {
 
 // Make the directory
 fs.mkdirSync('./src/Components/' + component);
+
+// Write the files
 fs.writeFileSync('./src/Components/' + component + '/index.js', indexFile, 'utf8');
 fs.writeFileSync('./src/Components/' + component + '/' + component + '.js', componentFile, 'utf8');
 fs.writeFileSync('./src/Components/' + component + '/' + component + '.test.js', testFile, 'utf8');
