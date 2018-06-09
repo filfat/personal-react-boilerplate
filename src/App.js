@@ -7,10 +7,6 @@ import Footer from './Components/Footer';
 import './scss/main.css';
 
 class App extends Component {
-    constructor () {
-        super();
-    }
-
     render() {
         return (
             <div className="App">
