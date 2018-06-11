@@ -1,5 +1,5 @@
 # personal-react-boilerplate
-Track Authority Music - React Interface
+Personal react boilerplate for quick prototyping
 
 ## Developing
 This will start a local development server with hot-reload.
