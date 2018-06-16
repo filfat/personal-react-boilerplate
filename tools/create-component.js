@@ -10,6 +10,8 @@ if (process.argv.length < 3) {
 // Content
 const indexFile = `import ${component} from './${component}';
 
+import './${component}.css';
+
 export default ${component};`;
 
 const componentFile = `import React, { Component } from 'react';
@@ -48,4 +50,7 @@ fs.writeFileSync('./src/Components/' + component + '/index.js', indexFile, 'utf8
 fs.writeFileSync('./src/Components/' + component + '/' + component + '.js', componentFile, 'utf8');
 fs.writeFileSync('./src/Components/' + component + '/' + component + '.test.js', testFile, 'utf8');
 
-console.log('Wrote 3 files...');
+fs.writeFileSync('./src/Components/' + component + '/' + component + '.css', '', 'utf8');
+fs.writeFileSync('./src/Components/' + component + '/' + component + '.scss', "@import '../../scss/shared.scss';", 'utf8');
+
+console.log('Wrote 5 files...');
