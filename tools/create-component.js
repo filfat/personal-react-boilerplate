@@ -10,11 +10,11 @@ if (process.argv.length < 3) {
 // Content
 const indexFile = `import ${component} from './${component}';
 
-import './${component}.css';
-
 export default ${component};`;
 
 const componentFile = `import React, { Component } from 'react';
+
+import './${component}.css';
 
 class ${component} extends Component {
     render() {
