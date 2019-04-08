@@ -17,7 +17,7 @@ const componentFile = `import React, { Component } from 'react';
 class ${view} extends Component {
     render() {
         return (
-			<div></div>
+            <div></div>
         );
     }
 }
@@ -45,7 +45,15 @@ fs.mkdirSync('./src/Views/' + view);
 
 // Write the files
 fs.writeFileSync('./src/Views/' + view + '/index.js', indexFile, 'utf8');
-fs.writeFileSync('./src/Views/' + view + '/' + view + '.js', componentFile, 'utf8');
-fs.writeFileSync('./src/Views/' + view + '/' + view + '.test.js', testFile, 'utf8');
+fs.writeFileSync(
+    './src/Views/' + view + '/' + view + '.js',
+    componentFile,
+    'utf8'
+);
+fs.writeFileSync(
+    './src/Views/' + view + '/' + view + '.test.js',
+    testFile,
+    'utf8'
+);
 
 console.log('Wrote 3 files...');

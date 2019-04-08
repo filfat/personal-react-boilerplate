@@ -2,13 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { BrowserRouter } from 'react-router-dom';
-import Logger from './Utils/logger';
 
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-
-// Clear all previous logs
-Logger.Clear();
+import { register } from './serviceWorker';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -17,4 +13,4 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
-registerServiceWorker();
+register();

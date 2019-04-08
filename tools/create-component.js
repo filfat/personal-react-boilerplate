@@ -19,7 +19,7 @@ import './${component}.css';
 class ${component} extends Component {
     render() {
         return (
-			<div></div>
+            <div></div>
         );
     }
 }
@@ -46,11 +46,31 @@ it('renders without crashing', () => {
 fs.mkdirSync('./src/Components/' + component);
 
 // Write the files
-fs.writeFileSync('./src/Components/' + component + '/index.js', indexFile, 'utf8');
-fs.writeFileSync('./src/Components/' + component + '/' + component + '.js', componentFile, 'utf8');
-fs.writeFileSync('./src/Components/' + component + '/' + component + '.test.js', testFile, 'utf8');
+fs.writeFileSync(
+    './src/Components/' + component + '/index.js',
+    indexFile,
+    'utf8'
+);
+fs.writeFileSync(
+    './src/Components/' + component + '/' + component + '.js',
+    componentFile,
+    'utf8'
+);
+fs.writeFileSync(
+    './src/Components/' + component + '/' + component + '.test.js',
+    testFile,
+    'utf8'
+);
 
-fs.writeFileSync('./src/Components/' + component + '/' + component + '.css', '', 'utf8');
-fs.writeFileSync('./src/Components/' + component + '/' + component + '.scss', "@import '../../scss/shared.scss';", 'utf8');
+fs.writeFileSync(
+    './src/Components/' + component + '/' + component + '.css',
+    '',
+    'utf8'
+);
+fs.writeFileSync(
+    './src/Components/' + component + '/' + component + '.scss',
+    "@import '../../scss/shared.scss';",
+    'utf8'
+);
 
 console.log('Wrote 5 files...');
