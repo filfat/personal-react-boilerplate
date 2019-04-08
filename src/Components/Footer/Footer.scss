@@ -1,4 +1,8 @@
 @import '../../scss/shared.scss';
 
 footer {
+    min-height: 15vh;
+    padding: 2rem;
+    
+    background: $color-light-gray;
 }

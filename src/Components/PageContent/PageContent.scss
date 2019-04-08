@@ -1,1 +1,6 @@
 @import '../../scss/shared.scss';
+
+.PageContent {
+    min-height: calc(85vh - 60px);
+    padding: 2rem;
+}

@@ -1,4 +1,14 @@
 @import '../../scss/shared.scss';
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0px 2rem;
+
+    background: $color-primary;
+    color: $color-white;
+
+    line-height: 50px;
 }
